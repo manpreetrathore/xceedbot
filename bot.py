@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-from pretty_help import PrettyHelp
 from discord.utils import get
 import requests
 import aiohttp
