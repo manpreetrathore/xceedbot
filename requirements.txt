@@ -62,4 +62,4 @@ whitenoise==5.2.0
 wrapt==1.12.1
 yarg==0.1.9
 yarl==1.5.1
-youtube-dl==2020.9.14
+youtube-dl==2020.9.20
