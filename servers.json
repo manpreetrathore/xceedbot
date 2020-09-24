@@ -1,0 +1,145 @@
+{
+    "sid754741563766079509": {
+        "servername": "Class's server",
+        "serverownerid": 729664307478134804,
+        "prefix": "!",
+        "disabledcommands": [
+            "8ball"
+        ],
+        "modrolename": "Moderator",
+        "adminrolename": "Admin",
+        "quotes": [
+            "submission atc assignment for module 2 ",
+            "submission for cns assignment ",
+            "Assignment 2 dbms due today "
+        ],
+        "customcommands": [
+            {
+                "type": "simple",
+                "name": "atc",
+                "userlevel": 0,
+                "replyinpm": 0,
+                "desc": "nothing",
+                "content": "www.google.com "
+            },
+            {
+                "type": "simple",
+                "name": "dbms",
+                "userlevel": 0,
+                "replyinpm": 1,
+                "desc": "nothing",
+                "content": "www.cmrit.in "
+            },
+            {
+                "type": "simple",
+                "name": "upans",
+                "userlevel": 0,
+                "replyinpm": 0,
+                "desc": "nothing",
+                "content": "https://docs.google.com/forms/d/e/1FAIpQLSdqnaNQ5PdpkNlkzqZnXLCa_D3N-yUwGWKr6kFB8AxQyx3-sw/viewscore?viewscore=AE0zAgB4SbIkw4K-CWlY-1YAxwTqZ1w38Abp-bostqgH "
+            },
+            {
+                "type": "dsalgo",
+                "name": "aa mere paas",
+                "userlevel": 0,
+                "replyinpm": 1,
+                "desc": "nothing",
+                "content": "https://www.instagram.com/ "
+            },
+            {
+                "type": "aaa mere paas",
+                "name": "dsalgo",
+                "userlevel": 0,
+                "replyinpm": 0,
+                "desc": "nothing",
+                "content": "https://www.google.com "
+            },
+            {
+                "type": "simple",
+                "name": "fps",
+                "userlevel": 0,
+                "replyinpm": 1,
+                "desc": "Gives the frame rate",
+                "content": " fps 240hz "
+            },
+            {
+                "type": "simple",
+                "name": "atcnotes",
+                "userlevel": 0,
+                "replyinpm": 0,
+                "desc": "Atc Question Bank ",
+                "content": " https://meet.google.com/ybn-zerr-nep?pli=1&authuser=1 "
+            }
+        ]
+    },
+    "sid752580094312185927": {
+        "servername": "xcd's server",
+        "serverownerid": 729664307478134804,
+        "prefix": "!",
+        "disabledcommands": [
+            "atn",
+            "fps",
+            "res",
+            "boom"
+        ],
+        "modrolename": "Moderator",
+        "adminrolename": "Admin",
+        "quotes": [
+            "Pyaar bahut he chutiya cheez hai Sweetie ",
+            "abe gaand na fulao maa ch*d denge tumhari bsdk ",
+            "abe salle "
+        ],
+        "customcommands": [
+            {
+                "type": "simple",
+                "name": "cnq",
+                "userlevel": 0,
+                "replyinpm": 0,
+                "desc": "CoNQuest ",
+                "content": "Novo challein ?? "
+            },
+            {
+                "type": "quote",
+                "name": "atcann",
+                "userlevel": 0,
+                "content": [
+                    "Assign 1 "
+                ]
+            },
+            {
+                "type": "delquote",
+                "name": "atcdel",
+                "userlevel": 2,
+                "content": "atcann"
+            },
+            {
+                "type": "simple",
+                "name": "adf",
+                "userlevel": 0,
+                "replyinpm": 0,
+                "desc": "test",
+                "content": "test passed "
+            },
+            {
+                "type": "simple",
+                "name": "simp",
+                "userlevel": 0,
+                "replyinpm": 1,
+                "desc": "simple link",
+                "content": "https://meet.google.com/ybn-zerr-nep?pli=1&authuser=1 "
+            }
+        ]
+    },
+    "sid755480870605029458": {
+        "servername": "xtra's server",
+        "serverownerid": 729664307478134804,
+        "prefix": "!",
+        "disabledcommands": [
+            "8ball"
+        ],
+        "modrolename": "Moderator",
+        "adminrolename": "Admin",
+        "quotes": [],
+        "customcommands": []
+    }
+}
