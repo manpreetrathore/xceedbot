@@ -1013,27 +1013,27 @@ async def on_message(message):
                     await message.channel.send(embed=em1)
                     await message.delete()
 #
-                # elif args[0] == f'{prefix}setulrolenames':
-                #     if get_userlevel(message.author, message.guild) > 1:
-                #         if len(args) > 2:
-                #             set_userlevel_rolenames(message.guild.id, args[1], args[2])
-                #             await message.channel.send(
-                #                                       f'Set userlevel rolenames to {args[1]} (mod), ' +
-                #                                       f'{args[2]} (admin).')
-                #         elif len(args) > 1:
-                #             set_userlevel_rolenames(message.guild.id, args[1],
-                #                                     servers[f'sid{message.guild.id}']['adminrolename'])
-                #             await message.channel.send(
-                #                                       f'Set userlevel rolenames to {args[1]} (mod), ' +
-                #                                       f'{args[2]} (admin).')
-                #         else:
-                #             await message.channel.send(
-                #                                       'Please specify the moderator and admin role names ' \
-                #                                       + '(mod first, admin second).')
-                #     else:
-                #         await message.channel.send(
-                #                                   f'The {prefix}setulrolenames command may only be used by ' \
-                #                                   + 'admins, the server owner, or the bot owner.')
+                elif args[0] == f'{prefix}setulrolenames':
+                    if get_userlevel(message.author, message.guild) > 1:
+                        if len(args) > 2:
+                            set_userlevel_rolenames(message.guild.id, args[1], args[2])
+                            await message.channel.send(
+                                                      f'Set userlevel rolenames to {args[1]} (mod), ' +
+                                                      f'{args[2]} (admin).')
+                        elif len(args) > 1:
+                            set_userlevel_rolenames(message.guild.id, args[1],
+                                                    servers[f'sid{message.guild.id}']['adminrolename'])
+                            await message.channel.send(
+                                                      f'Set userlevel rolenames to {args[1]} (mod), ' +
+                                                      f'{args[2]} (admin).')
+                        else:
+                            await message.channel.send(
+                                                      'Please specify the moderator and admin role names ' \
+                                                      + '(mod first, admin second).')
+                    else:
+                        await message.channel.send(
+                                                  f'The {prefix}setulrolenames command may only be used by ' \
+                                                  + 'admins, the server owner, or the bot owner.')
                 elif args[0] == f'{prefix}report' == message.content.lower():
 
                     mse=random.choice(mge)
