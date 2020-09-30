@@ -144,8 +144,12 @@ def get_command_help_string(serverid, userlevel, commandname):
         messagestr = f'`{prefix}delcom [command]`: ' + \
                       'Removes a custom command from the server. (userlevel: 2)\n' + \
                       '`[command]`: The command to remove, without the prefix.'
+    elif commandname == 'play':
+        messagestr = f'`{prefix}play <args ... >`: Plays the specified song from youtube. (userlevel: 0)\n'
+    elif commandname == 'meme':
+        messagestr = f'`{prefix}meme : Gives a random meme from Reddit. (userlevel: 0)\n'
     elif commandname == 'echo':
-        messagestr = f'`{prefix}test <args ... >`: Prints the arguments specified. (userlevel: 0)\n' + \
+        messagestr = f'`{prefix}echo <args ... >`: Prints the arguments specified. (userlevel: 0)\n' + \
                       '`<args ... >`: The args to print.'
     elif commandname == 'tf':
         messagestr = f'`{prefix}tf`: Flip some tables. (╯°□°）╯︵ ┻━┻ (userlevel: 0)'
@@ -217,23 +221,20 @@ def get_command_help_string(serverid, userlevel, commandname):
                 messagestr += f'`[0] {prefix}userlevel`: Shows your userlevel.\n'
             elif userlevel >= 2:
                 messagestr += f'~~`[0] {prefix}userlevel`: Shows your userlevel.~~\n'
-            if 'atclink' not in disabledcommands:
-                messagestr += f'`[0] {prefix}atclink `: Gives you the ATC class meet link.\n'
-            elif userlevel >= 2:
-                messagestr += f'~~`[0] {prefix}atclink `: Gives you the ATC class meet link.~~\n'
             if 'poll' not in disabledcommands:
                 messagestr += f'`[0] {prefix}poll `: Prints the arguments specified as options.\n'
             elif userlevel >= 2:
                 messagestr += f'~~`[0] {prefix}poll `: Prints the arguments specified as options.~~\n'
             
-            # if 'stats' not in disabledcommands:
-            #     messagestr += f'`[0] {prefix}stats:` Shows some stats about the bot.\n'
-            # elif userlevel >= 2:
-            #     messagestr += f'~~`[0] {prefix}stats:` Shows some stats about the bot.~~\n'
-            # if 'src' not in disabledcommands:
-            #     messagestr += f'`[0] {prefix}src:` Gets the speedrun.com WR for a given game and category.\n'
-            # elif userlevel >= 2:
-            #     messagestr += f'~~`[0] {prefix}src:` Gets the speedrun.com WR for a given game and category.~~\n'
+            
+            if 'play' not in disabledcommands:
+                messagestr += f'`[0] {prefix}stats:` Plays specified music from Youtube. (play/pause/remove/skip)\n'
+            elif userlevel >= 2:
+                messagestr += f'~~`[0] {prefix}stats:` Plays specified music from Youtube. (play/pause/remove/skip)~~\n'
+            if 'meme' not in disabledcommands:
+                messagestr += f'`[0] {prefix}src:` Gets the random meme from Reddit.\n'
+            elif userlevel >= 2:
+                messagestr += f'~~`[0] {prefix}src:` Gets the random meme from Reddit. ~~\n'
 
         # custom commands
         for command in customcommands:
