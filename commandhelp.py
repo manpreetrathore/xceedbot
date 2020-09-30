@@ -228,13 +228,13 @@ def get_command_help_string(serverid, userlevel, commandname):
             
             
             if 'play' not in disabledcommands:
-                messagestr += f'`[0] {prefix}stats:` Plays specified music from Youtube. (play/pause/remove/skip)\n'
+                messagestr += f'`[0] {prefix}play:` Plays specified music from Youtube. (play/pause/remove/skip)\n'
             elif userlevel >= 2:
-                messagestr += f'~~`[0] {prefix}stats:` Plays specified music from Youtube. (play/pause/remove/skip)~~\n'
+                messagestr += f'~~`[0] {prefix}play:` Plays specified music from Youtube. (play/pause/remove/skip)~~\n'
             if 'meme' not in disabledcommands:
-                messagestr += f'`[0] {prefix}src:` Gets the random meme from Reddit.\n'
+                messagestr += f'`[0] {prefix}meme:` Gets the random meme from Reddit.\n'
             elif userlevel >= 2:
-                messagestr += f'~~`[0] {prefix}src:` Gets the random meme from Reddit. ~~\n'
+                messagestr += f'~~`[0] {prefix}meme:` Gets the random meme from Reddit. ~~\n'
 
         # custom commands
         for command in customcommands:
