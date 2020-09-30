@@ -26,12 +26,12 @@ def get_command_help_string(serverid, userlevel, commandname):
                       '`<server|default>`: Specify whether or not to change the ' + \
                       'server\'s command prefix, or the default prefix. If omitted, ' + \
                       'defaults to `server`. (userlevel: 4)'
-    # elif commandname == 'setulrolenames':
-    #     messagestr = f'`{prefix}setulrolenames [modrole] <adminrole>`: ' + \
-    #                   'Changes the moderator/admin role names. (userlevel: 2)\n' + \
-    #                   '`[modrole]`: The moderator rolename.\n' + \
-    #                   '`<adminrole>`: The admin role name. If omitted, ' + \
-    #                   'defaults to whatever the current admin role name is.'
+    elif commandname == 'setulrolenames':
+        messagestr = f'`{prefix}setulrolenames [modrole] <adminrole>`: ' + \
+                      'Changes the moderator/admin role names. (userlevel: 2)\n' + \
+                      '`[modrole]`: The moderator rolename.\n' + \
+                      '`<adminrole>`: The admin role name. If omitted, ' + \
+                      'defaults to whatever the current admin role name is.'
     elif commandname == 'addquote':
         messagestr = f'`{prefix}addquote -- [quote ... ]`: ' + \
                       'Adds a quote to the list. (userlevel: 1)\n' + \
@@ -188,11 +188,12 @@ def get_command_help_string(serverid, userlevel, commandname):
             messagestr +=f'`you are at the top`'
         if userlevel >= 2:
                 messagestr += f'`[2] {prefix}setprefix`: Changes the bot command prefix.\n'
-                # messagestr += f'`[2] {prefix}setulrolenames`: Changes the admin/mod role names.\n'
+                messagestr += f'`[2] {prefix}setulrolenames`: Changes the admin/mod role names.\n'
                 messagestr += f'`[2] {prefix}toggle`: Toggles a command on or off.\n'
                 messagestr += f'`[2] {prefix}addcom`: Adds a custom command to the server.\n'
                 messagestr += f'`[2] {prefix}delcom`: Removes a custom command from the server.\n'
         if userlevel >= 1:
+            
             messagestr += f'`[1] {prefix}addquote`: Adds a quote to the quote list.\n'
             messagestr += f'`[1] {prefix}delquote`: Removes a quote from the quote list.\n'
         if userlevel >= 0:
@@ -225,6 +226,7 @@ def get_command_help_string(serverid, userlevel, commandname):
                 messagestr += f'`[0] {prefix}poll `: Prints the arguments specified as options.\n'
             elif userlevel >= 2:
                 messagestr += f'~~`[0] {prefix}poll `: Prints the arguments specified as options.~~\n'
+            
             # if 'stats' not in disabledcommands:
             #     messagestr += f'`[0] {prefix}stats:` Shows some stats about the bot.\n'
             # elif userlevel >= 2:
