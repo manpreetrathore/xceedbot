@@ -170,8 +170,7 @@ def get_command_help_string(serverid, userlevel, commandname):
     #                  '`[game]`: The game to get the WR for.\n' + \
     #                  '`[category ... ]`: The category to get the WR for.\n' + \
     #                  'Note that the category  names are case-sensitive.'
-    elif commandname == 'atclink':
-        messagestr = f'`{prefix}atclink `: Gives you the ATC class meet link. (userlevel: 0)\n'
+    
     elif commandname == 'poll':
         messagestr = f'`{prefix}poll <args ... >`: Prints the arguments specified as options. (userlevel: 0)\n' + \
                       '`<args ... >`: The args/options to print.'
