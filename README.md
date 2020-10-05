@@ -19,7 +19,7 @@ Add the bot from the link if you want to use it in your server.
 
 ### Installing
 
-* For using it directly : https://discord.com/oauth2/authorize?client_id=753198481346396180&permissions=8&scope=bot
+* For using it directly : [INVITE BOT](https://discord.com/oauth2/authorize?client_id=753198481346396180&permissions=8&scope=bot)
 * Update configs.py, tokens.txt, and logins.py with your own credentials.
 
 ### Executing program
